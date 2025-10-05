@@ -1,0 +1,31 @@
+# Dependências
+node_modules/
+
+# Build
+dist/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Cache e arquivos temporários
+.cache/
+.temp
+*.tsbuildinfo
+
+# Configurações do ambiente
+.env
+.env.local
+.env.*.local
+
+# Arquivos do editor
+.vscode/
+.idea/
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# Vite
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*

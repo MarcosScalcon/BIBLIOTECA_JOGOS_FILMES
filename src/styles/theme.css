@@ -1,0 +1,370 @@
+/* Tema personalizado - Verde forte e preto */
+:root {
+  --primary-green: #2E7D32;
+  --primary-green-dark: #1B5E20;
+  --primary-green-light: #4CAF50;
+  --accent-green: #66BB6A;
+  --dark-bg: #121212;
+  --dark-surface: #1E1E1E;
+  --dark-card: #2D2D2D;
+  --text-light: #FFFFFF;
+  --text-secondary: #B0B0B0;
+  --success-green: #4CAF50;
+  --warning-amber: #FF9800;
+  --error-red: #F44336;
+  --info-blue: #2196F3;
+}
+
+/* Cores personalizadas do tema */
+.v-application {
+  background: linear-gradient(135deg, var(--dark-bg) 0%, var(--dark-surface) 100%) !important;
+  min-height: 100vh;
+}
+
+/* Personalização da barra de navegação */
+.v-app-bar {
+  background: linear-gradient(90deg, var(--primary-green-dark) 0%, var(--primary-green) 100%) !important;
+  box-shadow: 0 4px 20px rgba(46, 125, 50, 0.3) !important;
+}
+
+.v-app-bar .v-btn {
+  margin: 0 4px;
+  transition: all 0.3s ease;
+}
+
+.v-app-bar .v-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  transform: translateY(-2px);
+}
+
+.v-app-bar .v-btn.v-btn--variant-tonal {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+  font-weight: bold;
+}
+
+/* Estilo dos cartões */
+.v-card {
+  background: var(--dark-card) !important;
+  color: var(--text-light) !important;
+  border: 1px solid rgba(46, 125, 50, 0.2);
+  transition: all 0.3s ease;
+}
+
+.v-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(46, 125, 50, 0.2) !important;
+}
+
+.v-card-title {
+  color: var(--primary-green-light) !important;
+  font-weight: bold;
+  font-size: 1.2rem !important;
+}
+
+.v-card-text {
+  color: var(--text-light) !important;
+}
+
+/* Cartões coloridos do painel */
+.v-card.bg-primary {
+  background: linear-gradient(135deg, var(--primary-green) 0%, var(--primary-green-dark) 100%) !important;
+  border: none;
+}
+
+.v-card.bg-success {
+  background: linear-gradient(135deg, var(--success-green) 0%, #388E3C 100%) !important;
+  border: none;
+}
+
+.v-card.bg-info {
+  background: linear-gradient(135deg, var(--info-blue) 0%, #1976D2 100%) !important;
+  border: none;
+}
+
+.v-card.bg-warning {
+  background: linear-gradient(135deg, var(--warning-amber) 0%, #F57C00 100%) !important;
+  border: none;
+}
+
+/* Botões */
+.v-btn {
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.v-btn.v-btn--variant-elevated.v-theme--dark {
+  background: var(--primary-green) !important;
+  color: white !important;
+}
+
+.v-btn.v-btn--variant-elevated.v-theme--dark:hover {
+  background: var(--primary-green-dark) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(46, 125, 50, 0.4) !important;
+}
+
+.v-btn.v-btn--variant-outlined {
+  border-color: var(--primary-green) !important;
+  color: var(--primary-green) !important;
+}
+
+.v-btn.v-btn--variant-outlined:hover {
+  background: var(--primary-green) !important;
+  color: white !important;
+}
+
+/* Campos de formulário */
+.v-text-field, .v-select, .v-textarea {
+  background: var(--dark-surface) !important;
+}
+
+.v-text-field .v-field, .v-select .v-field, .v-textarea .v-field {
+  background: var(--dark-surface) !important;
+  border: 1px solid rgba(46, 125, 50, 0.3);
+  border-radius: 8px !important;
+}
+
+.v-text-field.v-field--focused .v-field, .v-select.v-field--focused .v-field {
+  border-color: var(--primary-green-light) !important;
+  box-shadow: 0 0 0 2px rgba(46, 125, 50, 0.2) !important;
+}
+
+.v-label {
+  color: var(--text-secondary) !important;
+}
+
+.v-input input, .v-input textarea {
+  color: var(--text-light) !important;
+}
+
+/* Menus suspensos */
+.v-menu .v-overlay__content {
+  background: var(--dark-card) !important;
+  border: 1px solid rgba(46, 125, 50, 0.3) !important;
+  border-radius: 8px !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.8) !important;
+}
+
+.v-select__content {
+  background: var(--dark-card) !important;
+  border: 1px solid rgba(46, 125, 50, 0.3) !important;
+  border-radius: 8px !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.8) !important;
+}
+
+.v-overlay__content > .v-list {
+  background: var(--dark-card) !important;
+}
+
+.v-list-item {
+  background: transparent !important;
+}
+
+.v-list-item:hover {
+  background: rgba(46, 125, 50, 0.2) !important;
+}
+
+.v-list-item--active {
+  background: rgba(46, 125, 50, 0.3) !important;
+  color: var(--primary-green-light) !important;
+}
+
+/* Correção de fundo de overlay */
+.v-overlay__content {
+  background: var(--dark-card) !important;
+}
+
+/* Estilos específicos para select */
+.v-select .v-overlay__content .v-list {
+  background: var(--dark-card) !important;
+}
+
+.v-menu > .v-overlay__content > .v-card,
+.v-menu > .v-overlay__content > .v-list {
+  background: var(--dark-card) !important;
+}
+
+/* Garantir fundos sólidos nos dropdowns */
+.v-autocomplete .v-overlay__content,
+.v-combobox .v-overlay__content {
+  background: var(--dark-card) !important;
+}
+
+/* Listas */
+.v-list {
+  background: var(--dark-card) !important;
+}
+
+.v-list-item {
+  color: var(--text-light) !important;
+  border-radius: 8px;
+  margin: 4px 0;
+  transition: all 0.3s ease;
+}
+
+.v-list-item:hover {
+  background: rgba(46, 125, 50, 0.2) !important;
+  transform: translateX(8px);
+}
+
+.v-list-item-title {
+  color: var(--text-light) !important;
+  font-weight: 500;
+}
+
+.v-list-item-subtitle {
+  color: var(--text-secondary) !important;
+}
+
+/* Chips */
+.v-chip {
+  font-weight: 600;
+  border-radius: 20px !important;
+}
+
+.v-chip.v-chip--variant-elevated {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Divisores */
+.v-divider {
+  border-color: rgba(46, 125, 50, 0.3) !important;
+}
+
+/* Container e layout */
+.v-main {
+  background: transparent !important;
+}
+
+.v-container {
+  max-width: 1200px;
+}
+
+/* Melhorias de tipografia */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-light) !important;
+  font-weight: 700;
+}
+
+h1 {
+  background: linear-gradient(90deg, var(--primary-green-light), var(--accent-green));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-size: 2.2rem !important;
+  margin-bottom: 1rem;
+}
+
+p {
+  color: var(--text-secondary) !important;
+  line-height: 1.6;
+}
+
+/* Ícones */
+.v-icon {
+  transition: all 0.3s ease;
+}
+
+.v-card:hover .v-icon {
+  transform: scale(1.1);
+}
+
+/* Personalização da barra de rolagem */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--dark-surface);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-green);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-green-light);
+}
+
+/* Ocultar barra de progresso do navegador */
+::-webkit-progress-bar {
+  display: none !important;
+}
+
+::-webkit-progress-value {
+  display: none !important;
+}
+
+/* Ocultar indicadores de carregamento */
+.nprogress {
+  display: none !important;
+}
+
+progress {
+  display: none !important;
+}
+
+/* Carregamento e transições */
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 0.3s ease;
+}
+
+.fade-enter-from, .fade-leave-to {
+  opacity: 0;
+}
+
+/* Responsive improvements */
+@media (max-width: 768px) {
+  .v-app-bar .v-btn {
+    min-width: auto !important;
+    padding: 0 8px !important;
+  }
+  
+  .v-app-bar-title {
+    font-size: 1rem !important;
+  }
+  
+  h1 {
+    font-size: 1.8rem !important;
+  }
+  
+  .v-card {
+    margin-bottom: 16px;
+  }
+}
+
+/* Special effects */
+@keyframes glow {
+  0% { box-shadow: 0 0 5px rgba(46, 125, 50, 0.3); }
+  50% { box-shadow: 0 0 20px rgba(46, 125, 50, 0.6); }
+  100% { box-shadow: 0 0 5px rgba(46, 125, 50, 0.3); }
+}
+
+.glow-effect {
+  animation: glow 2s infinite;
+}
+
+/* Success/Error states */
+.v-alert.v-theme--dark {
+  background: var(--dark-card) !important;
+  border-left: 4px solid var(--primary-green) !important;
+}
+
+/* Data table improvements */
+.v-data-table {
+  background: var(--dark-card) !important;
+  color: var(--text-light) !important;
+}
+
+.v-data-table .v-data-table__td {
+  border-bottom: 1px solid rgba(46, 125, 50, 0.2) !important;
+}
+
+.v-data-table .v-data-table__th {
+  background: var(--primary-green-dark) !important;
+  color: white !important;
+  font-weight: bold;
+}
+
+
